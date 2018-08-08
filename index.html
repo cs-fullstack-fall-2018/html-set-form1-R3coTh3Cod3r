@@ -1,3 +1,12 @@
+<!-- 
+
+KEY: Where are my comments?! Please get in the habit of including at least one comment at the top of every submission saying what the code is doing. Can be brief, but needs to be there :-) 
+
+KEY: Overall though, really nice job man as this was a tough exercise. I think you did the best at following the instructions.
+
+See my notes inline. Keep up the great effort! 
+
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,25 +17,29 @@
 
 <form action="" method="get">
     <div>
+        <!-- KEY: Use 'placeholder' that helps the user out as to what to enter. -->
         <label for="first-name">First Name:</label>
-        <input type="text" name="first-name" id="first-name" placeholder="Jim" required>
+        <input type="text" name="first-name" id="first-name" placeholder="Enter First Name Here" required>
         <label for="last-name">Last Name:</label>
-        <input type="text" name="last-name" id="last-name" placeholder="Barry" required>
-
+        <input type="text" name="last-name" id="last-name" placeholder="Enter First Name Here" required>
 
 
     </div>
 
-<div>
+    <div>
+        <!--
+        KEY: Labels should be 'New Applicant' and 'Existing' but guessing just a copy/paste error :-)
 
-    <label for="first-name">First Name</label>
-    <input type="radio" name="first-name" id="first-name-1" value="first-name-1" />
+        For radio buttons to work as a same group, give them all the same name so only one can
+        be selected. They can still have/submit different 'values'
+    -->
+        <label for="new-applicant">New Applicant</label>
+        <input type="radio" name="radio-choice" id="new-applicant" value="new-applicant"/>
 
-    <label for="last-name">Last Name</label>
-    <input type="radio" name="last-name" id="last-name-2" value="choice-2" />
+        <label for="existing-applicant">Existing</label>
+        <input type="radio" name="radio-choice" id="existing-applicant" value="existing-applicant"/>
 
-</div>
-
+    </div>
 
 
     <div>
@@ -34,29 +47,22 @@
         <select name="select-choice" id="select-choice">
             <option value="0" selected disabled>Select</option>
             <option value="">Software Developer</option>
-            <option value="">Software Engineer </option>
+            <option value="">Software Engineer</option>
 
         </select>
     </div>
 
     <div>
         <label for="checkbox">I agree to the terms and conditions</label>
-        <input type="checkbox" name="checkbox" id="checkbox" />
+        <input type="checkbox" name="checkbox" id="checkbox"/>
     </div>
 
     <div>
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit"/>
     </div>
 
 
-
-
-
-
-
-
 </form>
-
 
 
 </body>
